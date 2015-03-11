@@ -14,5 +14,5 @@ exports.get = function(request, response) {
     //    res.writeHead(200,{'Content-Type':'text/plain'})
     //    res.end('Hello World\n')
     //}).listen(port);
-    response.send(statusCodes.OK, { message : "123"});
+    response.send(statusCodes.OK, { message :http});
 };
