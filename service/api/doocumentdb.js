@@ -8,5 +8,6 @@ exports.post = function(request, response) {
 
 exports.get = function(request, response) {
     var http=require('http')
+    var port=process.env.port||13337;
     response.send(statusCodes.OK, { message : http });
 };
