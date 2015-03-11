@@ -7,5 +7,6 @@ exports.post = function(request, response) {
 };
 
 exports.get = function(request, response) {
+    var http=require('http')
     response.send(statusCodes.OK, { message : 'Hello World!' });
 };
