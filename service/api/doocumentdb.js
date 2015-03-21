@@ -17,7 +17,8 @@ exports.get = function(request, response) {
     var collectionDefinition={"id":"boop"}
     var documentDefinition={"id":1,"nombre":"pedro","apellido":"azpurua"}
     client.createDatabase(databaseDefinition,function(err,database){
-        
+        client.createCollection(database._self,collectionDefinition,function(err,collection){
+        })
     })
     response.send(statusCodes.OK, { message :'hola'});
 };
