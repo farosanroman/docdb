@@ -18,6 +18,11 @@ exports.get = function(request, response) {
     var documentDefinition={"id":1,"nombre":"pedro","apellido":"azpurua"}
     client.createDatabase(databaseDefinition,function(err,database){
         client.createCollection(database._self,collectionDefinition,function(err,collection){
+            client.createDocument(collection._self,documentDefinition,function(err,document){
+                client.queryDocuments(collection._self,"select * from docs d where d.id=1").toArray(function(err,results){
+                    console.log(results)
+                })
+            })
         })
     })
     response.send(statusCodes.OK, { message :'hola'});
