@@ -7,6 +7,7 @@ exports.post = function(request, response) {
 };
 
 exports.get = function(request, response) {
+    //https://farodocumentdb.azure-mobile.net/api/doocumentdb
    //http://azure.microsoft.com/en-us/documentation/videos/azure-demo-getting-started-with-azure-documentdb-on-nodejs-in-linux/
     var DocumentClient=require("documentdb").DocumentClient
     var endpoint="https://captacion.documents.azure.com:443/"
