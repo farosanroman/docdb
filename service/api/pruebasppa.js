@@ -7,5 +7,6 @@ exports.post = function(request, response) {
 };
 
 exports.get = function(request, response) {
+   // https://farodocumentdb.azure-mobile.net/api/doocumentdb
     response.send(statusCodes.OK, { message :{"id":1,"nombre":"ppa ppa"}  });
 };
