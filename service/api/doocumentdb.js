@@ -11,6 +11,8 @@ exports.get = function(request, response) {
    //http://azure.microsoft.com/en-us/documentation/videos/azure-demo-getting-started-with-azure-documentdb-on-nodejs-in-linux/
   var config = require('mobileservice-config')
   console.log(config)
+    console.log(config)
+      console.log(config)
   var docdb = require('../shared/docdb.js');
     var DocumentClient=require("documentdb").DocumentClient
     var endpoint="https://captacion.documents.azure.com:443/"
